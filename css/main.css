@@ -18,8 +18,11 @@ img {
   width: 1440px;
   margin: 0 auto;
 }
+.material-icons {
+  display: inline;
+}
 
-/* HEADER */
+/* HEADER NOTICE*/
 header .inner .header-notice {
   width: 100%;
   color: #fff;
@@ -37,6 +40,7 @@ header .inner .header-notice a {
   line-height: 1.5;
   background-color: transparent;
 }
+/* SUB NAVI */
 header .inner .sub-nav {
   padding: 15px 0;
 }
@@ -78,6 +82,7 @@ header .inner .sub-nav .container .header-text {
   padding: 0 20px;
   box-sizing: border-box;
 }
+/* HEADER LOGO */
 header .inner .header-logo {
   padding-top: 20px;
   padding-bottom: 24px;
@@ -153,4 +158,76 @@ header .inner .header-logo .container .logo-info .right .weather img {
   height: 22px;
   margin-left: 10px;
 }
-
+/* MAIN MENU */
+header .inner .main-menu {
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  padding: 12px 0;
+  box-sizing: border-box;
+}
+header .inner .main-menu .container .row {
+  position: relative;
+  display: flex;
+  padding: 0 20px;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 700;
+}
+header .inner .main-menu .container .row .search {
+  width: 240px;
+}
+header .inner .main-menu .container .row .search .wrap {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+header .inner .main-menu .container .row .search .wrap .icon {
+  display: inline-block;
+  padding-right: 5px;
+  width: 16px;
+  height: 16px;
+}
+header .inner .main-menu .container .center-nav .wrap {
+  display: flex;
+  width: 920px;
+  padding: 0 20px;
+  box-sizing: border-box;
+  justify-content: center;
+  text-align: center;
+}
+header .inner .main-menu .container .center-nav .wrap .menu {
+  margin: 0 24px;
+  cursor: pointer;
+}
+header .inner .main-menu .container .brand-nav {
+  width: 240px;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+header .inner .main-menu .container .brand-nav .wrap {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  cursor: pointer;
+}
+header .inner .main-menu .container .brand-nav .wrap .text {
+  font-size: 14px;
+}
+header .inner .main-menu .container .row .brand-nav .wrap .icon {
+  display: inline-block;
+  padding-right: 5px;
+  width: 16px;
+  height: 16px;
+}
+/* MAIN BANNER */
+header .inner .main-banner .banner-area {
+  width: 100%;
+  height: 525px;
+}
+header .inner .main-banner .banner-area img {
+  height: 525px;
+}
