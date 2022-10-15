@@ -376,7 +376,9 @@ header .inner .main-menu .container .row .brand-nav .wrap .icon {
 .curation .container .row .right {
   flex: 0 0 33.333333%;
   max-width: 33.333333%;
-  background-color: bisque;
+  padding: 0 20px;
+  box-sizing: border-box;
+  position: relative;
 }
 .curation .container .row .left .today-curation {
   margin-bottom: 50px;
@@ -448,7 +450,18 @@ header .inner .main-menu .container .row .brand-nav .wrap .icon {
   line-height: 1.6;
   color: #444;
 }
-
+.curation .container .row .right .cal-box .category {
+  padding: 0 0 23px 23px;
+}
+.curation .container .row .right .cal-box .category .more-btn {
+  position: absolute;
+  right: 34px;
+}
+.curation .container .row .right .cal-box .category .more-btn a {
+  font-size: 13px;
+  color: #999;
+  font-weight: 600;
+}
 
 /* SERIAL SECTION */
 .serial {
@@ -458,7 +471,6 @@ header .inner .main-menu .container .row .brand-nav .wrap .icon {
   padding-bottom: 20px;
   padding-left: 20px;
 }
-
 .serial .container .row {
   display: flex;
   justify-content: center;
@@ -492,24 +504,29 @@ header .inner .main-menu .container .row .brand-nav .wrap .icon {
   color: #444;
   margin-top: 20px;
 }
+
 /* WANT SECTION */
-.want .container .category {
-  padding: 0 20px 20px 20px;
-}
 .want .container .row {
   display: flex;
-  margin: 0 -20px;
   flex-wrap: wrap;
-}
-.want .container .row .left,
-.want .container .row .right {
-  height: 840.25px;
-  padding: 0 20px;
-  box-sizing: border-box;
 }
 .want .container .row .left {
   flex: 0 0 66.666667%;
   max-width: 66.666667%;
+  margin-bottom: 80px;
+}
+.want .container .row .left .category {
+  padding: 0 20px 20px 20px;
+  position: relative;
+}
+.want .container .row .left .category .more-btn {
+  position: absolute;
+  right: 20px;
+}
+.want .container .row .left .category .more-btn a {
+  font-size: 13px;
+  color: #999;
+  font-weight: 600;
 }
 .want .container .row .left .want-list {
   display: flex;
@@ -556,10 +573,94 @@ header .inner .main-menu .container .row .brand-nav .wrap .icon {
 .want .container .row .right {
   flex: 0 0 33.333333%;
   max-width: 33.333333%;
-  background-color: bisque;
+  padding: 0 20px;
+  box-sizing: border-box;
+  margin-bottom: 80px;
 }
-
-
+.want .container .row .right .md {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+}
+.want .container .row .right .md .item-box{
+  background-color: #f6f6f6;
+  padding: 40px 40px 64px 40px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 685px;
+}
+.want .container .row .right .item-box .btn-group {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin-bottom: 20px;
+}
+.want .container .row .right .item-box .btn-group .btn {
+  width: 24px;
+  height: 24px;
+  background-color: #fff;
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+}
+.want .container .row .right .item-box .btn-group .btn.prev {
+  background-image: url('https://slowsteadyclub.com/web/baton/images/icon/icon_arrow_left_blue.png');
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.want .container .row .right .item-box .btn-group .btn.next {
+  background-image: url('https://slowsteadyclub.com/web/baton/images/icon/icon_arrow_right_blue.png');
+  position: absolute;
+  top: 0;
+  left: 28px;
+}
+.want .container .row .right .item-box .btn-group .refresh {
+ display: flex;
+ align-items: center;
+}
+.want .container .row .right .item-box .btn-group .refresh p {
+  margin-right: 10px;
+  font-size: 14px;
+}
+.want .container .row .right .item-box .btn-group .refresh .btn {
+  background-image: url('https://slowsteadyclub.com/web/baton/images/icon/icon_ad_reset.png');
+}
+.want .container .row .right .item-box .item .image {
+  position: relative;
+  margin-bottom: 16px;
+}
+.want .container .row .right .item-box .item .image .promotion {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  background-color: #0033ff;
+  text-align: center;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 7px;
+  box-sizing: border-box;
+}
+.want .container .row .right .item-box .item .info .brand {
+  font-size: 13px;
+  font-weight: 700;
+  padding-bottom: 5px;
+}
+.want .container .row .right .item-box .item .info .product-name {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 7px;
+}
+.want .container .row .right .item-box .item .info .desc {
+  font-size: 16px;
+  font-family: 'Noto Sans KR', sans-serif;
+  line-height: 1.6;
+}
 
 /* DOCU SECTION */
 .docu {
