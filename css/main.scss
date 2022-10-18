@@ -43,33 +43,30 @@ img {
 .category {
   display: flex;
   align-items: center;
-  /* margin-bottom: 15px; */
+  .circle {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 6px;
+    margin-bottom: -2px;
+  }
+  .blue {
+    background-color: #2800ff;
+  }
+  .green {
+    background-color: #00ff00;
+  }
+  .pink {
+    background-color: #ff00fb;
+  }
+  .category-name {
+    font-size: 13px;
+    font-weight: 700;
+  }
 }
 
-.circle {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  margin-right: 6px;
-  margin-bottom: -2px;
-}
 
-.circle.blue {
-  background-color: #2800ff;
-}
 
-.circle.green {
-  background-color: #00ff00;
-}
-
-.circle.pink {
-  background-color: #ff00fb;
-}
-
-.category .category-name {
-  font-size: 13px;
-  font-weight: 700;
-}
 /* COLOR */
 $white: #fff;
 $black: #000;
@@ -313,6 +310,36 @@ header {
           }
         }
       }
+    }
+  }
+}
+/* CS BUTTON */
+.button {
+  position: fixed;
+  bottom: 120px !important;
+  right: 59px !important;
+  z-index: 100 !important;
+  width: 50px;
+  height: 50px;
+  background-image: url('https://cf.channel.io/pub-file/84196/623c2b334158c56f3c94/ssc-mo-talk.png');
+  background-size: cover;
+  cursor: pointer;
+  .alert {
+    p {
+      position: absolute;
+      top: -6px;
+      right: -6px;
+      z-index: 101;
+      width: 24px;
+      height: 24px;
+      background-color: rgb(233, 78, 88);
+      font-size: 14px;
+      color: $white;
+      border-radius: 20px;
+      text-align: center;
+      padding-top: 1px;
+      font-weight: 200;
+      box-sizing: border-box;
     }
   }
 }
